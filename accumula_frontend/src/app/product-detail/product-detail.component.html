@@ -1,0 +1,18 @@
+<div *ngIf="product">
+
+    <h2>{{product.productName | uppercase}} Details</h2>
+    <div><span>productId: </span>{{product.productId}}</div>
+    <div><span>productName: </span>{{product.productName}}</div>
+    <div><span>inventoryQuantity: </span>{{product.inventoryQuantity}}</div>
+    <div><span>maxBusinessDaysToShip: </span>{{product.maxBusinessDaysToShip}}</div>
+    <div><span>shipOnWeekends: </span>{{product.shipOnWeekends}}</div>
+    <div><span>shipping_date: </span>{{product.shipping_date}}</div>
+    <!-- <div>
+      <label for="product-name">product name: </label>
+      <input id="product-name" [(ngModel)]="product.productName" placeholder="name">
+    </div> -->
+
+
+    <button type="button" (click)="goBack()">go back</button>
+  
+  </div>
