@@ -6,7 +6,7 @@ import config
 
 app = Flask(__name__)
 
-
+# function to read sample products from the json file
 def read_products_from_file():
     with open('./sample_data.json', 'r') as f:
         products = json.load(f)
